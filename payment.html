@@ -8,41 +8,54 @@
 </head>
  <body>
    <script src= "./JS/payment.js"></script>
-  <!-- multistep form -->
-<form id="msform">
-  <!-- progressbar -->
-  <ul id="progressbar">
-    <li class="active">Método de pago</li>
-    <li>Llenar los datos</li>
-    <li>Confirmación de la información</li>
-  </ul>
-  <!-- fieldsets -->
-  <fieldset>
-    <h2 class="fs-title">Escoja un método de pago</h2>
-    <h3 class="fs-subtitle">This is step 1</h3>
-    <input type="text" name="email" placeholder="Email" />
-    <input type="password" name="pass" placeholder="Password" />
-    <input type="password" name="cpass" placeholder="Confirm Password" />
-    <input type="button" name="next" class="next action-button" value="Next" />
-  </fieldset>
-  <fieldset>
-    <h2 class="fs-title">Social Profiles</h2>
-    <h3 class="fs-subtitle">Your presence on the social network</h3>
-    <input type="text" name="twitter" placeholder="Twitter" />
-    <input type="text" name="facebook" placeholder="Facebook" />
-    <input type="text" name="gplus" placeholder="Google Plus" />
-    <input type="button" name="previous" class="previous action-button" value="Previous" />
-    <input type="button" name="next" class="next action-button" value="Next" />
-  </fieldset>
-  <fieldset>
-    <h2 class="fs-title">Personal Details</h2>
-    <h3 class="fs-subtitle">We will never sell it</h3>
-    <input type="text" name="fname" placeholder="First Name" />
-    <input type="text" name="lname" placeholder="Last Name" />
-    <input type="text" name="phone" placeholder="Phone" />
-    <textarea name="address" placeholder="Address"></textarea>
-    <input type="button" name="previous" class="previous action-button" value="Previous" />
-    <input type="submit" name="submit" class="submit action-button" value="Submit" />
-  </fieldset>
-</form>
+   <div class="container">
+    <div class="wrapper">
+      <ul class="steps">
+        <li>Step 1</li>
+        <li>Step 2</li>
+        <li class ="is-active">Step 3</li>
+      </ul>
+      <form class="form-wrapper">
+        <fieldset class="section is-active">
+          <!--<h3>Método de pago</h3>
+          <div class="row cf">
+            <div class="four col">
+              <input type="radio" name="r1" id="r1" checked>
+              <label for="r1">
+                <h4>Tarjeta de crédito</h4>
+              </label>
+            </div>
+            <div class="four col">
+              <input type="radio" name="r1" id="r2"><label for="r2">
+                <h4>Paypal</h4>
+              </label>
+            </div>
+            <div class="four col">
+              <input type="radio" name="r1" id="r3"><label for="r3">
+                <h4>Transferencia bancaria</h4>
+              </label>
+            </div>
+          </div>
+          <div class="button">Next</div>
+          <div class="button">Next</div>
+        </fieldset>-->
+        <!--<h3>Tarjeta de crédito</h3>
+          <input type="text" name="name" id="name" placeholder="Número de la tarjeta">
+          <input type="text" name="email" id="email" placeholder="Nombre del propietario de la tarjeta">
+          <input type="text" name="email" id="email" placeholder="Fecha de expiración     MM/YY">
+          <input type="text" name="email" id="email" placeholder="CVC">
+          <div class="button">Next</div>-->
+          <h3>Confirmación de la compra</h3>
+          <img style="float:left; margin:10px;" src="./icons/cuenta.png"/>
+          <h5>Nombre: <u>John Doe</u>.</h5>
+          <h5>Pedido: <u>Innova Mirror</u>.</h5>
+          <h5>Cantidad:<u>30</u>.</h5>
+          <h5>Subtotal: <u>120.000 COP</u>.</h5>
+          <h5>Impuestos: <u>22.800 COP</u>.</h5>
+          <h5>Total: <u>142.800 COP</u>.</h5>
+          <div class="button" style="float: right; margin: -10px;">Confirmar compra</div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
 </html>
