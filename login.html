@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./CSS/login.css" />
+</head>
+<body>
+    <script src="./JS/login.js"></script>
+    <div class="overlay">
+        <!-- LOGN IN FORM by Omar Dsoky -->
+        <form>
+           <!--   con = Container  for items in the form-->
+           <div class="con">
+           <!--     Start  header Content  -->
+           <header class="head-form">
+              <h2>Iniciar sesión</h2>
+              <!--     A welcome message or an explanation of the login form -->
+              <p>Inicie sesión usando su E-mail y contraseña</p>
+           </header>
+           <!--     End  header Content  -->
+           <br>
+           <div class="field-set">
+             
+              <!--   user name -->
+                 <span class="input-item">
+                   <i class="fa fa-user-circle"></i>
+                 </span>
+                <!--   user name Input-->
+                 <input class="form-input" id="txt-input" type="text" placeholder="E-mail" required>
+             
+              <br>
+             
+                   <!--   Password -->
+             
+              <span class="input-item">
+                <i class="fa fa-key"></i>
+               </span>
+              <!--   Password Input-->
+              <input class="form-input" type="password" placeholder="Contraseña" id="pwd"  name="password" required>
+             
+        <!--      Show/hide password  -->
+             <span>
+                <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+             </span>
+             
+             
+              <br>
+        <!--        buttons -->
+        <!--      button LogIn -->
+              <button class="log-in"> Ingresar </button>
+           </div>
+          
+        <!--   other buttons -->
+           <div class="other">
+        <!--      Forgot Password button-->
+              <button class="btn submits frgt-pass">Olvidó su contraseña</button>
+        <!--     Sign Up button -->
+              <button class="btn submits sign-up">Registrarse
+        <!--         Sign Up font icon -->
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+              </button>
+        <!--      End Other the Division -->
+           </div>
+             
+        <!--   End Conrainer  -->
+          </div>
+          
+          <!-- End Form -->
+        </form>
+        </div>
+</body>
+</html>
