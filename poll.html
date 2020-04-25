@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Innova Mirror</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./CSS/login.css"/>
+</head>
+<body>
+    <div class="overlay">
+        <form>
+           <div class="con">
+           <header class="head-form">
+              <h2>Encuesta de satisfacción.</h2>
+              <p>Por favor, rellene los espacios, está encuesta nos sirve para mejorar nuestro producto así como también nuestro servicio.</p>
+              <p>Escriba aquí su opinión acerca del servicio</p>
+           <div class="field-set">    
+              <!--   Opinion -->
+                 <span class="input-item">
+                   <i class="fa fa-user-circle"></i>
+                 </span>
+                <!--   user name Input-->
+                <input class="form-input" id="txt-input" type="text" placeholder="Opinión" required>
+              <br>
+                   <!--   Sugerencia -->
+                   <p style="margin-top: 20px;">¿Tiene alguna sugerencia para nuestro servicio?</p>
+              <span class="input-item">
+                <i class="fa fa-key"></i>
+               </span>
+              <input class="form-input" type="txt-input" placeholder="Sugerencia"required>
+            
+              <br>
+            <!--Demora para la entrega-->
+            <p style="margin-top: 20px;">¿Cuanto tardó en entregarse el productor?</p>
+               <input type="radio" id="time1" name="age" value="30">
+               <label for="time1">1 - 3 días</label><br>
+               <input type="radio" id="time2" name="age" value="60">
+               <label for="time2">4 - 6 días</label><br>  
+               <input type="radio" id="time3" name="age" value="100">
+               <label for="time3">7 o más días</label><br>
+            <br>
+            <!--      Que le parecio el producto -->
+            <p style="margin-top: 20px;">¿Qué le pareció nuestro producto?</p>
+            <span class="input-item">
+            <i class="fa fa-key"></i>
+            </span>
+            <input class="form-input" type="txt-input" placeholder="Opinión del producto"required>
+
+            <!--      Comentario del producto -->
+            <p style="margin-top: 20px;">¿Tiene algún comentario para mejorar nuestro producto?</p>
+            <span class="input-item">
+            <i class="fa fa-key"></i>
+            </span>
+            <input class="form-input" type="txt-input" placeholder="Sugerencia para el producto"required>
+            <br>
+            </header>
+            <br>
+        <!--        buttons -->
+        <!--      button Enviar -->
+              <button class="log-in"> Enviar </button>
+           </div>
+        <!--   End Conrainer  -->
+          </div>
+          <!-- End Form -->
+        </form>
+        </div>
+</body>
+</html>
